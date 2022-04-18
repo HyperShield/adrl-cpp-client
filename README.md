@@ -1,6 +1,6 @@
 # AirSim Drone Racing Lab C++ client
 
-The ADRL is meant to be used with python, but with a bit of trickery you can get it running with C++. You will need to have airlib in a folder at the same level as the project folder.
+The ADRL is meant to be used with python, but with a bit of trickery you can get it running with C++. You will need to have airlib in a folder at the same level as the project folder. In the CMakeLists.txt you need to replace "AIRSIM_ROOT_FOLDER" in line 14 with your own path to airlib.
 
 This repository is my attempt to get a sub 30 second time using a bad approach. I'm using a tuned quintic hermite spline as a trajectory that is parameterized based on path length. Then a reactive attitude controller is used to track the trajectory.
 
